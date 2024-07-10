@@ -14,7 +14,7 @@ public class PromptGenerator
 
     public string GetFilename()
     {
-        Console.Write("What is the filename");
+        Console.Write("What is the filename? ");
         string filename = Console.ReadLine();
         return filename;
     }

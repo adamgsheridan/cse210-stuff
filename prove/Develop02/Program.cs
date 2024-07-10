@@ -18,15 +18,19 @@ class Program
             }
             else if (input == "2")
             {
-                
+                Console.WriteLine(journal);
             }
             else if (input == "3")
             {
-                
+                string filename = prompt.GetFilename();
+                FileManager loadFileManager = new FileManager();
+                journal = loadFileManager.LoadJournal("journal.txt");
             }
             else if (input == "4")
             {
-                
+                string filename = prompt.GetFilename();
+                FileManager fileManager = new FileManager();
+                fileManager.SaveJournal(journal, "journal.txt");
             }
             prompt.Greeting();
             input = prompt.GetInput();
