@@ -1,5 +1,3 @@
-using System.Security.Principal;
-
 public class ListingActivity
 {
     List<string> _prompts = new List<string> {
