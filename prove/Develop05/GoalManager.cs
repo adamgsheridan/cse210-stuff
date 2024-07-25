@@ -1,4 +1,3 @@
-using System.IO;
 class GoalManager
 {
     private int _totalPoints;
